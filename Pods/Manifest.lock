@@ -1,0 +1,61 @@
+PODS:
+  - Alamofire (5.2.1)
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - SDWebImage (5.8.3):
+    - SDWebImage/Core (= 5.8.3)
+  - SDWebImage/Core (5.8.3)
+  - SDWebImagePDFCoder (0.7.0):
+    - SDWebImage (~> 5.6)
+  - SDWebImageSVGCoder (1.5.0):
+    - SDWebImage/Core (~> 5.6)
+  - SDWebImageSwiftUI (1.5.0):
+    - SDWebImage (~> 5.7)
+  - SDWebImageWebPCoder (0.6.1):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.7)
+  - SwiftSVG (2.3.2)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SDWebImagePDFCoder
+  - SDWebImageSVGCoder
+  - SDWebImageSwiftUI
+  - SDWebImageWebPCoder
+  - SwiftSVG (~> 2.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - libwebp
+    - SDWebImage
+    - SDWebImagePDFCoder
+    - SDWebImageSVGCoder
+    - SDWebImageSwiftUI
+    - SDWebImageWebPCoder
+    - SwiftSVG
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  SDWebImagePDFCoder: 0162d7dcc5ba28673a217dfce096815e8304ba29
+  SDWebImageSVGCoder: 057f61bd29c13aea7ddf9b5b0e23c34bcd2fba21
+  SDWebImageSwiftUI: 43687ffe232ddd33fe0659498b7ca9884fdd6b35
+  SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
+  SwiftSVG: ca7f64e403b8ea7ea8eba8c823b83ba4a059834c
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 84256d0590c8f45c3386c352930da8c7b9569f78
+
+COCOAPODS: 1.9.3

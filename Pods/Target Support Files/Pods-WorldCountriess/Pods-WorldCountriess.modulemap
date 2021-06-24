@@ -1,0 +1,6 @@
+framework module Pods_WorldCountriess {
+  umbrella header "Pods-WorldCountriess-umbrella.h"
+
+  export *
+  module * { export * }
+}
