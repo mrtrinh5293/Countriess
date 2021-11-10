@@ -35,12 +35,12 @@ struct FirstUIView: View {
                         self.searchText.isEmpty ? true: $0.wrapperName.lowercased().contains(self.searchText.lowercased())
                     }, id: \.name)
                     { country in
-
+                        
                         NavigationLink(destination: DetailView(country: country)) {
                             RowView(cdCountry: country, edit: self.$show)
                             if self.favorites.contains(country) {
                                 Image(systemName: "checkmark.seal.fill")
-                                .accessibility(label: Text("Favorite one"))
+                                    .accessibility(label: Text("Favorite one"))
                                     .foregroundColor(.green)
                             }
                         }
@@ -74,16 +74,15 @@ struct FirstUIView: View {
                     })
             )
         }
-            .navigationViewStyle(StackNavigationViewStyle())
-
-            .environmentObject(favorites)
+        .navigationViewStyle(StackNavigationViewStyle())
+        .environmentObject(favorites)
         .onAppear {
-        if self.country.isEmpty {
-            DispatchQueue.global().async {
-                CoreCountry.loadDataToCD(moc: self.moc)
+            if self.country.isEmpty {
+                DispatchQueue.global().async {
+                    NetworkManager.loadDataToCD(moc: self.moc)
+                }
             }
         }
-    }
         
     }
 }

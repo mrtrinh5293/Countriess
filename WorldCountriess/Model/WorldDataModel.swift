@@ -8,17 +8,15 @@
 
 import Foundation
 
-struct Currency: Decodable {
+struct Currency: Decodable,Encodable {
     let code, name, symbol: String?
 }
 
-struct Language : Decodable {
+struct Language : Decodable,Encodable {
     let name : String?
 }
 
-
-
-struct WorldData: Identifiable, Decodable {
+struct WorldData: Identifiable, Decodable, Encodable {
     var id : Int {
         return population
     }
