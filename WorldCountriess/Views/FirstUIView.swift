@@ -11,6 +11,10 @@ import SwiftUI
 struct FirstUIView: View {
     
     @ObservedObject var networkmanager = NetworkManager()
+    //
+    @ObservedObject var vm = CountriesViewModel()
+    
+    //
     @State var searchText = ""
     @State var isSearchVisible = false
     @State var show = false
@@ -79,7 +83,7 @@ struct FirstUIView: View {
         .onAppear {
             if self.country.isEmpty {
                 DispatchQueue.global().async {
-                    NetworkManager.loadDataToCD(moc: self.moc)
+                    APIService.loadDataToCD(moc: self.moc)
                 }
             }
         }

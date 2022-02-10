@@ -16,6 +16,10 @@ struct Language : Decodable,Encodable {
     let name : String?
 }
 
+struct CountryList: Decodable {
+    var result: [WorldData]
+}
+
 struct WorldData: Identifiable, Decodable, Encodable {
     var id : Int {
         return population

@@ -18,7 +18,6 @@ struct ContentView: View {
                     .tag(0)
             }
             
-            
             MapContainer()
                 .edgesIgnoringSafeArea(.vertical)
                 .tabItem{
